@@ -23,7 +23,7 @@ import{getDatabase,ref,set} from "https://www.gstatic.com/firebasejs/9.17.2/fire
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const auth=getAuth();
-  const databse=getDatabase();
+  const databse=getDatabase(app);
 
   var name=document.getElementById("name")
   var email=document.getElementById("email")
